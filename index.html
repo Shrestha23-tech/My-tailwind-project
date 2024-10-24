@@ -3,13 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSIGNMENT</title>
+    <title>Our Services</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Rotate the entire card (box) on hover */
+        .hover-rotate {
+            transition: transform 0.6s ease-in-out;
+        }
+
+        .hover-rotate:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Custom background color */
+        .custom-bg {
+            background-color: #0d09e8; /* Dark blue/purple color */
+        }
+        
+    </style>
 </head>
-<body>
-    <div id="assignment">
-        <div class="container">
-            
+<body class="bg-purple-300 custom-bg">
+
+    <!-- Our Services Section inside #assignment div -->
+    <div id="assignment" class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 my-8">
+        <h2 class="text-4xl font-bold text-center text-white mb-8">Our Services</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 hover-rotate mx-4 my-4 transition-transform duration-700">
+                <div class="flex justify-center">
+                    <!-- ICON 1 -->
+                    <i class="fas fa-tools text-indigo-500 text-6xl"></i>
+                </div>
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-800">Emergency Plumbing Services</h3>
+                <p class="mt-2 text-gray-600 text-center">Providing 24/7 services for emergency plumbing needs.</p>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-indigo-500 font-medium hover:underline">Explore this service ></a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 hover-rotate mx-4 my-4 transition-transform duration-700">
+                <div class="flex justify-center">
+                    <!-- ICON 2 -->
+                    <i class="fas fa-faucet text-indigo-500 text-6xl"></i>
+                </div>
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-800">Plumbing and Drains</h3>
+                <p class="mt-2 text-gray-600 text-center">Complete solutions for all plumbing and drainage issues.</p>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-indigo-500 font-medium hover:underline">Explore this service ></a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 hover-rotate mx-4 my-4 transition-transform duration-700">
+                <div class="flex justify-center">
+                    <!-- ICON 3 -->
+                    <i class="fas fa-water text-indigo-500 text-6xl"></i>
+                </div>
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-800">Water Damage</h3>
+                <p class="mt-2 text-gray-600 text-center">Get expert help to restore your home from water damage.</p>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-indigo-500 font-medium hover:underline">Explore this service ></a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white shadow-md rounded-lg p-6 hover-rotate mx-4 my-4 transition-transform duration-700">
+                <div class="flex justify-center">
+                    <!-- ICON 4 -->
+                    <i class="fas fa-burn text-indigo-500 text-6xl"></i>
+                </div>
+                <h3 class="mt-4 text-2xl font-semibold text-center text-gray-800">Water Heaters</h3>
+                <p class="mt-2 text-gray-600 text-center">Expert installation and repair for all types of water heaters.</p>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-indigo-500 font-medium hover:underline">Explore this service ></a>
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
